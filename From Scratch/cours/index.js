@@ -121,3 +121,18 @@ form.addEventListener("submit", (e) => {
 window.addEventListener("load", () => {
   console.log("Document chargé !");
 });
+
+//--------------------------------------
+
+// Les forEach (en français : pour chacun)
+
+//  permet de pointer plusieurs élements de même Nom, avec document.querySelectorAll, pour qu'il ai le même comportement :
+//
+const boxes = document.querySelectorAll(".box");
+console.log(boxes);
+
+boxes.forEach((box) => {
+  box.addEventListener("click", (e) => {
+    e.target.style.transform = "scale(0.7)";
+  });
+});
