@@ -113,3 +113,11 @@ form.addEventListener("submit", (e) => {
     alert("Veuillez cocher les CGV");
   }
 });
+
+//--------------------------------------
+
+// Load event
+
+window.addEventListener("load", () => {
+  console.log("Document chargé !");
+});
