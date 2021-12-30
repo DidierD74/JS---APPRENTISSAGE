@@ -136,3 +136,17 @@ boxes.forEach((box) => {
     e.target.style.transform = "scale(0.7)";
   });
 });
+
+// Bubling (false par defaut) => permet de déclarer un argument suplémentaire pour qu, en ajoutant "true" il est sur false par defaut :
+
+document.body.addEventListener("click", () => {
+  console.log("click 1 !");
+});
+//-- Usecapture :
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("click 2 !");
+  },
+  true
+);
